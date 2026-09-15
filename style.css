@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F7F3EA;
+    color: #1F2925;
+}
+.navbar{
+    width: 100%;
+    min-height: 70px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2F5D50;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.199);
+    position: relative;
+}
+
+.logo{
+    font-size: 21px;
+    font-weight: 900;
+    color: #F7F3EA;
+}
+.logo span{
+    font-weight: normal;
+}
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+    font-size: 28px;
+    color: #F7F3EA;
+    cursor: pointer;
+}
+.nav-links{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    background-color: #2F5D50;
+    padding: 10px 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.nav-links li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(247, 243, 234, 0.15);
+}
+.nav-links a{
+    text-decoration: none;
+    color: #F7F3EA;
+    font-size: 16px;
+}
+.nav-links a:hover{
+    color: #A8B89A;
+}
+#menu-toggle:checked ~ .nav-links {
+    display: block;
+}
+
+/* proo */
+
+.hero {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(31, 41, 37, 0.55),
+            rgba(31, 41, 37, 0.55)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-small-title {
+    margin-bottom: 15px;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    color: #A8B89A;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+    line-height: 1.15;
+
+    color: #F7F3EA;
+}
+
+.hero-text {
+    max-width: 450px;
+
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #F7F3EA;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #F7F3EA;
+    color: #2F5D50;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: #A8B89A;
+}
